@@ -2,7 +2,7 @@
 <form method="post" action="/pizza-orders">
   <div>
     <label for="first-name">First Name:</label>
-    <input id="first-name" type="text" name="first_name" />
+    <input id="first-name" type="text" name="first_name" required />
   </div>
   <div>
     <label for="last-name">Last Name:</label>
@@ -10,7 +10,7 @@
   </div>
   <div>
     <label for="pizza-select">Select a Pizza:</label>
-    <select id="pizza-select" name="topping">
+    <select id="pizza-select" name="topping" required>
       <option value="Margherita">Margherita</option>
       <option value="Hawaiian">Hawaiian</option>
     </select>
@@ -20,6 +20,6 @@
     <input id="quantity" type="number" name="quantity" min="1" />
   </div>
   <div>
-  <input type="submit" value="Order Pizza" />
-</div>
+    <input type="submit" value="Order Pizza" class="submit-button"/>
+  </div>
 </form>

@@ -42,7 +42,6 @@ post "/pizza-orders/:id" do
   erb(:show)
 end
 
-
 # DELETE - Deletes a pizza order from the database
 post "/pizza-order/:id/delete" do
   @order = PizzaOrder.find(params[:id])

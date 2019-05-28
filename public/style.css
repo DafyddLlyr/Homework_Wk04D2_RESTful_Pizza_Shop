@@ -3,29 +3,40 @@ body {
   background-repeat: repeat;
   margin: 0;
   padding: 0;
+  font-family: 'Lobster', cursive;
 }
 
-table {
-  width: 80vw;
-  border-collapse: collapse;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 20px 20px 0px 0px;
-  border: 1px solid black;
-}
-
-td, th {
-  text-align: left;
-  padding: 1vw;
-}
-
-th {
+header {
+  height: 15vh;
   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
   color: white;
 }
 
-tr:nth-child(odd) {
-  background-color: #f2f2f2;
+nav {
+  background-color: darkred;
+  height: 4vw;
+  margin-bottom: 4vw;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -38,22 +49,33 @@ ul {
   height: 100%
 }
 
-header {
-  height: 15vh;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav {
-  background-color: darkred;
-  height: 4vw;
+table {
+  width: 80vw;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 4vw;
 }
 
-nav a {
+td {
+  text-align: left;
+  padding: 1vw;
+}
+
+th {
+  background-color: red;
   color: white;
+  text-align: left;
+  padding: 1vw;
+  font-family: 'Lobster', cursive;
+  font-size: 1.3rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
 }
 
 form {
@@ -80,7 +102,7 @@ input, select {
 
 label {
   text-align: right;
-  font-size: 1.2em;
+  font-size: 1.4em;
   width: 20%;
   margin: 1vw;
   padding: 0;
@@ -90,6 +112,15 @@ label {
   margin: 0;
   width: auto;
   font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 1vh 2vh;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete {
+  background-color: red;
 }
 
 .page-title {
@@ -100,6 +131,7 @@ label {
   text-align: center;
   border-radius: 20px 20px 0px 0px;
   color: white;
+  font-size: 2rem;
 }
 
 form div, .page-title, .card, table {
@@ -115,4 +147,22 @@ form div, .page-title, .card, table {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  width: 15vw;
+  padding: 1vw;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.submit-button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.submit-button:active {
+  transform: scale(0.9, 0.9);
 }

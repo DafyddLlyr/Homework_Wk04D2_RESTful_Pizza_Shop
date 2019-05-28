@@ -1,0 +1,22 @@
+table {
+  width: 80vw;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 1vw;
+}
+
+th {
+  background-color: red;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}

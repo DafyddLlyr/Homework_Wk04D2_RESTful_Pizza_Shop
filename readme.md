@@ -5,7 +5,8 @@ A pizza shop app following RESTful principles which allows you to create, read, 
 HTML/CSS frontend with Ruby/Sinatra/PostgreSQL backend.
 
 <p align="center">
-*Create new orders*
+
+ *Create new orders*
   <img src="/screenshots/new_order.png">
 
   *View all orders*

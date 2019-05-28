@@ -1,19 +1,25 @@
+<h3 class="page-title">Edit your pizza</h3>
 <form method="post" action="/pizza-orders/<%= @order.id %>">
+  <div>
   <label for="first-name">First Name:</label>
   <input id="first-name" type="text" name="first_name" value="<%=@order.first_name%>"/>
-
+</div>
+<div>
   <label for="last-name">Last Name:</label>
   <input id="last-name" type="text" name="last_name" value="<%= @order.last_name %>"/>
-
+</div>
+<div>
   <label for="pizza-select">Select a Pizza:</label>
   <select id="pizza-select" name="topping">
     <option value="Margherita">Margherita</option>
     <option value="Hawaiian">Hawaiian</option>
   </select>
-
+</div>
+<div>
   <label for="quantity">Quantity:</label>
   <input id="quantity" type="number" name="quantity" min="1" value="<%= @order.quantity %>"/>
-
+</div>
+<div>
   <input type="submit" value="Edit Order"/>
-
+</div>
 </form>

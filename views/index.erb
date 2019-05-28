@@ -1,16 +1,16 @@
 <table>
   <tr>
+    <th>id</th>
     <th>Name</th>
     <th>Topping</th>
     <th>Quantity</th>
-    <th>Details</th>
   </tr>
   <% for order in @orders %>
   <tr>
+    <td><a href="pizza-orders/<%= order.id() %>"><%= order.id() %></a></td>
     <td><%= order.pretty_name() %></td>
     <td><%= order.topping() %></td>
     <td><%= order.quantity() %></td>
-    <td><a href="pizza-orders/<%= order.id() %>">More information...</a></td>
   </tr>
   <% end %>
 </table>

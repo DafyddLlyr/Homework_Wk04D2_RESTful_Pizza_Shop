@@ -69,7 +69,7 @@ class PizzaOrder
   end
 
   def self.all()
-    sql = "SELECT * FROM pizza_orders"
+    sql = "SELECT * FROM pizza_orders ORDER BY first_name"
     pizzas = SqlRunner.run( sql )
     result = pizzas.map { |pizza| PizzaOrder.new( pizza ) }
     return result

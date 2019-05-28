@@ -14,12 +14,12 @@
     <td><%= @order.quantity() %></td>
     <td>
       <form action="/pizza-orders/<%= @order.id %>/edit">
-        <input type="submit" value="Edit Order">
+        <input type="submit" class="index-button" value="Edit Order">
       </form>
     </td>
     <td>
       <form action="/pizza-order/<%= @order.id %>/delete" method="post">
-       <input type="submit" value="Delete Order">
+       <input type="submit" class="index-button" value="Delete Order">
       </form>
     </td>
   </tr>
